@@ -1,0 +1,4 @@
+version: STSv1
+mode: testing
+max_age: 2419200
+mx: msravionics-com.mail.protection.outlook.com
