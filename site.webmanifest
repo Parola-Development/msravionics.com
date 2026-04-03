@@ -1,0 +1,20 @@
+{
+  "name": "MSR Avionics",
+  "short_name": "MSR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf3f8",
+  "theme_color": "#016fae",
+  "icons": [
+    {
+      "src": "assets/images/msr-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/msr-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

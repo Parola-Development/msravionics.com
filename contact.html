@@ -4,7 +4,22 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Contact | MSR Avionics</title>
-  <meta name="description" content="Contact MSR Avionics to request a capability review or send an RFQ."/>
+  <meta name="description" content="Contact MSR Avionics to discuss capability fit, quote readiness, and NDA-led programme support."/>
+  <link rel="canonical" href="https://msravionics.com/contact.html"/>
+  <meta property="og:title" content="Contact | MSR Avionics"/>
+  <meta property="og:description" content="Contact MSR Avionics to discuss capability fit, quote readiness, and NDA-led programme support."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://msravionics.com/contact.html"/>
+  <meta property="og:image" content="https://msravionics.com/assets/images/og-msr-1200x630.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Contact | MSR Avionics"/>
+  <meta name="twitter:description" content="Contact MSR Avionics to discuss capability fit, quote readiness, and NDA-led programme support."/>
+  <meta name="twitter:image" content="https://msravionics.com/assets/images/og-msr-1200x630.jpg"/>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png"/>
+  <link rel="manifest" href="site.webmanifest"/>
   <link rel="stylesheet" href="assets/style.css"/>
 </head>
 <body>
@@ -14,70 +29,94 @@
     <div class="nav">
       <div class="toprow">
         <a class="brand" href="index.html" aria-label="Home">
-          <div class="logo">MSR</div>
-          <span>MSR Avionics</span>
+          <img class="brandLogo" src="assets/images/msr-logo-blue-440.jpg" srcset="assets/images/msr-logo-blue-440.jpg 1x, assets/images/msr-logo-blue-880.jpg 2x" alt="MSR Avionics"/>
+          <span class="srOnly">MSR Avionics</span>
         </a>
         <div class="cta">
+          <span class="contactMini">sales@msravionics.com</span>
           <a class="btn primary" href="rfq.html">Send RFQ</a>
           <button class="btn mobileToggle" data-mobile-toggle type="button" aria-label="Menu">Menu</button>
         </div>
       </div>
       <nav class="menu" data-menu>
-        <a class="" href="capabilities.html">Capabilities</a>
-        <a class="" href="quality.html">Quality & Traceability</a>
-        <a class="" href="rfq.html">RFQ Checklist</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="quality.html">Quality</a>
+        <a href="rfq.html">RFQ Checklist</a>
         <a class="active" href="contact.html">Contact</a>
       </nav>
     </div>
   </div>
 </header>
 
-<main class="container" style="padding:32px 0">
-  <h1 style="font-size:34px;margin-bottom:10px">Contact</h1>
-  <p class="lede">Request a capability review, ask a question, or send an RFQ. Replace the placeholders with your real contact details.</p>
+<main class="container" style="padding:34px 0">
+  <h1 style="font-size:36px;margin-bottom:10px">Contact</h1>
+  <p class="lede">Share your requirement and we will route it to the right technical or commercial contact quickly.</p>
 
   <div class="grid">
     <div class="card span6">
       <h3>Direct contact</h3>
-      <p><strong>Email:</strong> <em>REPLACE-WITH-CONTACT-EMAIL</em><br/>
-      <strong>Phone:</strong> <em>REPLACE-WITH-PHONE</em><br/>
-      <strong>Location:</strong> West Midlands, UK</p>
-      <p class="help">If you require an NDA before sharing details, say so in your message and we’ll respond with our preferred process.</p>
+      <p><strong>Email:</strong> sales@msravionics.com<br/>
+      <strong>Telephone:</strong> <a href="tel:+441676532468">01676 532 468</a><br/>
+      <strong>Address:</strong> MSR Avionics LTD, 2 Balsall Street East, Balsall Common, West Midlands CV7 7FR, United Kingdom<br/>
+      <a href="https://maps.app.goo.gl/8LyphqBZvyseE5JaA" target="_blank" rel="noopener">Open in Google Maps</a><br/>
+      <strong>Company Number:</strong> 00893969<br/>
+      <strong>VAT Number:</strong> GB272763637</p>
+      <p class="help">If an NDA is required before technical disclosure, include that in your first message and we will confirm next steps.</p>
     </div>
 
     <div class="card span6">
       <h3>Message form</h3>
-      <form action="#" method="post">
+      <form data-contact-form action="/api/enquiry?type=contact" method="post">
         <div class="formRow">
           <div>
             <label for="cname">Name</label>
-            <input id="cname" name="name" autocomplete="name" placeholder="Jane Smith"/>
+            <input id="cname" name="name" autocomplete="name" placeholder="Jane Smith" required/>
           </div>
           <div>
             <label for="cemail">Email</label>
-            <input id="cemail" name="email" type="email" autocomplete="email" placeholder="jane@company.com"/>
+            <input id="cemail" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required/>
           </div>
         </div>
         <div style="margin-top:12px">
           <label for="cmsg">Message</label>
-          <textarea id="cmsg" name="message" placeholder="What are you looking to source?"></textarea>
-          <div class="help">Privacy: We use this to reply to your enquiry and do not use it for unrelated marketing. See <a href="privacy.html">privacy policy</a>.</div>
+          <textarea id="cmsg" name="message" placeholder="What are you looking to source?" required></textarea>
+          <div class="help">Privacy: We use this information to respond to your enquiry only. See <a href="privacy.html">privacy policy</a>.</div>
+        </div>
+        <div class="trapField" aria-hidden="true">
+          <label for="contact-website">Website</label>
+          <input id="contact-website" name="company_website" type="text" tabindex="-1" autocomplete="off"/>
         </div>
         <div style="margin-top:12px">
-          <button class="btn primary" type="button">Example only (wire to email/CRM)</button>
+          <button class="btn primary" type="submit">Send enquiry</button>
+          <div class="formStatus" data-form-status aria-live="polite"></div>
         </div>
       </form>
     </div>
 
     <div class="card span12">
-      <h3>What to include for fastest response</h3>
+      <h3>For the fastest response include</h3>
       <ul>
-        <li>Whether you’re procurement, supplier quality, or engineering</li>
-        <li>What capability you need (coil winding / assemblies / build-to-print)</li>
-        <li>Timeline and approximate quantities</li>
-        <li>Any special documentation/traceability requirements</li>
+        <li>Your role (procurement, supplier quality, engineering)</li>
+        <li>Capability requested (coil winding, assemblies, build-to-print)</li>
+        <li>Timeline, quantities, and release profile</li>
+        <li>Documentation and traceability expectations</li>
       </ul>
-      <a class="btn" href="rfq.html">Use the RFQ checklist →</a>
+      <a class="btn" href="rfq.html">Open RFQ checklist</a>
+    </div>
+
+    <div class="card soft span12">
+      <h3>Secure document transfer</h3>
+      <p>If you need to send controlled drawings or sensitive technical information, request a secure upload link instead of sending standard email attachments.</p>
+      <ul>
+        <li>Request a secure upload link from our team</li>
+        <li>Upload through a time-limited access link</li>
+        <li>Quote your reference in follow-up communications for traceability</li>
+        <li>Optional: Use AES-256 encrypted archive with password shared separately by phone</li>
+      </ul>
+      <div style="margin-top:12px">
+        <a class="btn secondary" href="mailto:sales@msravionics.com?subject=Request%20Secure%20Upload%20Link%20-%20MSR%20Avionics">Request secure upload link</a>
+      </div>
+      <p class="help">Include company name, NDA status, and expected file size in your request.</p>
     </div>
   </div>
 </main>
@@ -85,10 +124,20 @@
 <footer>
   <div class="container">
     <div class="footerGrid">
-      <div>
-        <strong>MSR Avionics</strong><br/>
-        <span>West Midlands, UK</span><br/>
-        <span class="help">Replace placeholders with your registered address, phone and email.</span>
+      <div class="footerIdentity">
+        <img class="footerLogo" src="assets/images/msr-logo-blue-440.jpg" srcset="assets/images/msr-logo-blue-440.jpg 1x, assets/images/msr-logo-blue-880.jpg 2x" alt="MSR Avionics"/>
+        <address class="addressBlock">
+          MSR Avionics LTD, 2 Balsall Street East, Balsall Common, West Midlands CV7 7FR, United Kingdom
+        </address>
+        <a href="tel:+441676532468">Tel: 01676 532 468</a><br/>
+        <a href="https://maps.app.goo.gl/8LyphqBZvyseE5JaA" target="_blank" rel="noopener">View on Google Maps</a><br/>
+        <span>Company No: 00893969</span><br/>
+        <span>VAT No: GB272763637</span><br/>
+        <span>sales@msravionics.com</span>
+        <a class="certBlock certLink" href="https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/client-directory-profile/M_S_R_-0009260972-000" target="_blank" rel="noopener">
+          <img class="certLogo" src="assets/images/bsi-iso-9001-260.jpg" srcset="assets/images/bsi-iso-9001-260.jpg 1x, assets/images/bsi-iso-9001-520.jpg 2x" alt="BSI ISO 9001:2015 certification mark"/>
+          <span>BSI ISO 9001:2015 Certified</span>
+        </a>
       </div>
       <div>
         <strong>Company</strong><br/>
@@ -104,13 +153,13 @@
       </div>
     </div>
     <hr/>
-    <div class="help">© 2026 MSR Avionics. Example website draft for internal planning.</div>
+    <div class="help">&copy; 2026 MSR Avionics. All rights reserved.</div>
   </div>
 </footer>
 <div id="cookie-banner" class="cookie" role="dialog" aria-live="polite" aria-label="Cookie preferences">
   <div style="flex:1">
     <strong>Cookies</strong>
-    <p>We use essential cookies for site operation. Optional analytics cookies are only used if you opt in.</p>
+    <p>We use essential cookies for core site functionality. Optional analytics cookies are only used if you opt in.</p>
     <p class="help">See our <a href="cookies.html">cookie policy</a> for details.</p>
   </div>
   <div class="cookieActions">
