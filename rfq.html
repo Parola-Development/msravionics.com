@@ -102,7 +102,8 @@
     <div class="card span12">
       <h3>Quick RFQ form</h3>
       <p class="help">Submit your RFQ summary here and it will be delivered directly to the MSR Avionics sales team.</p>
-      <form data-rfq-form action="/api/enquiry?type=rfq" method="post">
+      <form data-rfq-form action="/api/enquiry" method="post">
+        <input name="type" type="hidden" value="rfq"/>
         <div class="formRow">
           <div>
             <label for="name">Name</label>
