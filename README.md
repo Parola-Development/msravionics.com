@@ -3,7 +3,7 @@ Main Website for MSR Avionics
 
 ## Form Delivery
 
-Contact and RFQ forms post to `/api/enquiry`, which should be routed by App Platform to the functions component that sends mail through Postmark.
+Contact and RFQ forms post to `/api/enquiry`, which should be routed by App Platform to the functions component that sends mail through Postmark. The form type is sent in the POST body, so the route does not need to preserve query parameters.
 
 ## DigitalOcean App Platform
 

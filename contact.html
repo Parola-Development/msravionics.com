@@ -66,7 +66,8 @@
 
     <div class="card span6">
       <h3>Message form</h3>
-      <form data-contact-form action="/api/enquiry?type=contact" method="post">
+      <form data-contact-form action="/api/enquiry" method="post">
+        <input name="type" type="hidden" value="contact"/>
         <div class="formRow">
           <div>
             <label for="cname">Name</label>
