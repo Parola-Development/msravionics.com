@@ -1,0 +1,9 @@
+packages:
+  - name: forms
+    functions:
+      - name: enquiry
+        runtime: nodejs:18
+        web: true
+        limits:
+          timeout: 10000
+          memory: 128
