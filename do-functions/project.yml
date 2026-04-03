@@ -1,5 +1,11 @@
 packages:
   - name: forms
+    environment:
+      POSTMARK_SERVER_TOKEN: "${POSTMARK_SERVER_TOKEN}"
+      POSTMARK_FROM_EMAIL: "${POSTMARK_FROM_EMAIL}"
+      POSTMARK_TO_EMAIL: "${POSTMARK_TO_EMAIL}"
+      POSTMARK_MESSAGE_STREAM: "${POSTMARK_MESSAGE_STREAM}"
+      POSTMARK_BCC_EMAIL: "${POSTMARK_BCC_EMAIL}"
     functions:
       - name: enquiry
         runtime: nodejs:18
